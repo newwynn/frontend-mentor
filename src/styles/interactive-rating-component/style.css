@@ -1,0 +1,183 @@
+@import url('https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&display=swap');
+
+:root {
+  --clr-orange-500: hsl(25, 97%, 53%);
+  --clr-white: hsl(0, 100%, 100%);
+  --clr-grey-500: hsl(217, 12%, 63%);
+  --clr-grey-900: hsl(213, 19%, 18%);
+  --clr-grey-950: hsl(216, 12%, 8%);
+  --ff-main: 'Overpass', sans-serif;
+  --fs-body: 15px;
+  --wrapper-max-width: 400px;
+  --border-radius: 1rem;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 100%;
+}
+
+body {
+  margin: 0;
+  font-family: var(--ff-main);
+  font-size: var(--fs-body);
+  background-color: var(--clr-grey-950);
+  color: var(--clr-white);
+  display: grid;
+  place-content: center;
+  min-height: 100vh;
+  line-height: 1.5;
+  height: 100vh;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  margin: 0 0 0.5em;
+  font-weight: 700;
+}
+
+.irc-rating-text {
+  margin: 0 0 1em;
+  color: var(--clr-grey-500);
+}
+
+button {
+  font-family: inherit;
+  font-size: inherit;
+  cursor: pointer;
+  border: none;
+  background: none;
+}
+
+.irc-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    transition: all 0.2s ease;
+}
+
+.irc-hidden {
+    display: none !important;
+}
+
+.irc-star-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 1rem;
+  border-radius: 50%;
+  background-color: var(--clr-grey-900);
+  width: 5rem;
+  height: 5rem;
+}
+
+.irc-star-container img {
+  width: 2rem;
+}
+
+.irc-card {
+  background: linear-gradient(180deg, var(--clr-grey-900) 0%, var(--clr-grey-950) 150%);
+  border-radius: var(--border-radius);
+  padding: 2rem;
+  width: 100%;
+  max-width: var(--wrapper-max-width);
+}
+
+.irc-rating-circle-container {
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.irc-rating-circle {
+  width: 3rem;
+  height: 3rem;
+  border-radius: 50%;
+  background-color: var(--clr-grey-900);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--clr-grey-500);
+  transition: background-color 0.2s ease, color 0.2s ease;
+  cursor: pointer;
+}
+
+.irc-rating-circle:hover,
+.irc-rating-circle:focus,
+.irc-rating-circle.irc-active {
+  background-color: var(--clr-orange-500);
+  color: var(--clr-white);
+}
+
+.irc-submit-btn {
+  width: 100%;
+  padding: 0.75rem 0;
+  border-radius: 3rem;
+  background-color: var(--clr-orange-500);
+  color: var(--clr-white);
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  transition: background-color 0.2s ease;
+}
+
+.irc-submit-btn:hover,
+.irc-submit-btn:focus {
+  background-color: var(--clr-white);
+  color: var(--clr-orange-500);
+}
+
+.irc-hidden {
+  display: none !important;
+}
+
+.irc-thank-text {
+    text-align: center;
+}
+
+.irc-selected-pill {
+  background-color: var(--clr-grey-900);
+  color: var(--clr-orange-500);
+  padding: 0.25rem 1rem;
+  border-radius: 3rem;
+  font-size: 0.85rem;
+  margin-bottom: 1rem;
+  display: inline-block;
+}
+
+.irc-loader {
+  display: inline-block;
+  width: 1em;
+  height: 1em;
+  border: 2px solid var(--clr-white);
+  border-top: 2px solid #7c8798;
+  border-radius: 50%;
+  animation: irc-spin 0.8s linear infinite;
+  vertical-align: middle;
+}
+
+@keyframes irc-spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+.irc-rating-circle.selected {
+  background: #7c8798;
+  color: #fff;
+}
+
+.irc-submit-btn.shake {
+  animation: shake 0.3s;
+}
+
+@keyframes shake {
+  10%, 90% { transform: translateX(-2px); }
+  20%, 80% { transform: translateX(4px); }
+  30%, 50%, 70% { transform: translateX(-8px); }
+  40%, 60% { transform: translateX(8px); }
+  100% { transform: translateX(0); }
+}
