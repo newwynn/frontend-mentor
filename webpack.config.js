@@ -2,9 +2,12 @@ const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 
 module.exports = {
-  entry: './src/index.js',
+  entry: {
+    main: './src/index.js',
+    rating: './src/scripts/interactive-rating-component/script.js'
+  },
   output: {
-    filename: 'bundle.js',
+    filename: '[name].js',
     path: path.resolve(__dirname, 'dist'),
     clean: true,
   },
@@ -31,11 +34,12 @@ module.exports = {
     new HtmlWebpackPlugin({
       template: './src/index.html',
       filename: 'index.html',
+      chunks: ['main'],
     }),
     new HtmlWebpackPlugin({
       template: './src/pages/interactive-rating-component/index.html',
       filename: 'pages/interactive-rating-component/index.html',
-      chunks: [],
+      chunks: ['rating'],
     }),
   ],
   devServer: {
