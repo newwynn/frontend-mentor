@@ -1,48 +1,27 @@
-# Frontend Mentor Projects
+# Frontend Mentor Components Collection
 
-This repository contains multiple solutions to challenges from [Frontend Mentor](https://www.frontendmentor.io/). Each project is organized in its own directory and includes its own assets, scripts, and documentation as needed.
+This project is a collection of solutions to [Frontend Mentor](https://www.frontendmentor.io/) challenges. Each component or mini-project is organized in its own folder under `src/pages/`.
 
-## Included Projects
-- [Interactive Rating Component](#interactive-rating-component)
-- (Add more projects here as you complete them)
+## How to Run Locally
 
----
-
-## Interactive Rating Component
-A basic interactive rating component project, inspired by Frontend Mentor challenges.
-
-### Features
-- Allows users to select a rating (typically 1–5)
-- Submits the selected rating and displays a thank you message
-- Responsive design for both desktop and mobile
-
-### Project Structure
-- `src/pages/interactive-rating-component/index.html` – Main HTML file for the component
-- `src/styles/interactive-rating-component/style.css` – Styles for the component
-- `src/index.js` – JavaScript logic for interactivity
-- `public/` – (if present) Contains static assets like images
-- `dist/` – Webpack output directory
-
-### Getting Started
-
-#### Prerequisites
-- Node.js and npm installed
-
-#### Installation
-1. Clone this repository or download the project files.
-2. Install dependencies (if package.json is present):
+1. **Install dependencies:**
    ```bash
    npm install
    ```
-3. Start the development server (if using Webpack):
+2. **Start the development server:**
    ```bash
    npm run dev
    ```
-   or open `index.html` directly in your browser for basic usage.
+   This will launch the app using Webpack Dev Server. Open the provided local URL in your browser.
 
-#### Usage
-- Select a rating by clicking one of the rating buttons.
-- Click the submit button to see the thank you state.
+Alternatively, you can open any `index.html` file in `src/pages/<component-name>/` directly in your browser for static viewing.
+
+## Project Structure
+- `src/index.html` – Main landing page linking to all components
+- `src/pages/` – Contains individual component projects
+- `public/assets/` – Shared images and static assets
+
+---
 
 #### Notes
 - If you encounter static asset issues, ensure your dev server is configured to serve from `dist`, `public`, and `src` directories.
