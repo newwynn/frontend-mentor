@@ -1,0 +1,108 @@
+:root {
+  --color-yellow: hsl(47, 88%, 63%);
+  --color-white: hsl(0, 0%, 100%);
+  --color-gray-500: hsl(0, 0%, 42%);
+  --color-gray-950: hsl(0, 0%, 7%);
+  --font-family-figtree: 'Figtree', sans-serif;
+  --font-weight-medium: 500;
+  --font-weight-bold: 800;
+  --font-size-body: 16px;
+  --breakpoint-mobile: 375px;
+  --breakpoint-desktop: 1440px;
+}
+
+body {
+    font-family: var(--font-family-figtree);
+    font-size: var(--font-size-body);
+    line-height: 1.5;
+    color: var(--color-gray-500);
+    background-color: var(--color-yellow);
+    margin: 0;
+    display: grid;
+    place-content: center;
+    min-height: 100vh;
+    height: 100vh;
+}
+
+.blog-preview-card {
+    background-color: var(--color-white);
+    border-radius: 1rem;
+    padding: 2rem;
+    width: 350px;
+    height: 500px;
+    max-width: var(--breakpoint-desktop);
+}
+
+.blog-preview-card {
+    transition: all 0.2s ease;
+}
+
+.blog-preview-card:hover {
+    box-shadow: 8px 8px var(--color-gray-950);
+    transform: translateY(-2px);
+    border: 1px solid var(--color-gray-950);
+    cursor: pointer;
+}
+
+.blog-preview-card-img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 1rem;
+    margin-bottom: 1rem;
+}
+
+.blog-preview-card-tag {
+    background-color: var(--color-yellow);
+    color: black;
+    padding: 0.5rem 1rem;
+    border-radius: 0.3rem;
+    font-size: 12px;
+    font-weight: var(--font-weight-bold);
+    width: 50px;
+    height: 12px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 1rem;
+}
+
+.blog-preview-card-text {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.blog-preview-card-span.date {
+    color: var(--color-gray-500);
+}
+
+.blog-preview-card-span.title {
+    font-weight: var(--font-weight-bold);
+    font-size: 22px;
+    margin-bottom: 0.5rem;
+    color: var(--color-gray-950);
+}
+
+.blog-preview-card-span.description {
+    color: var(--color-gray-500);
+    font-size: var(--font-size-body);
+}
+
+.blog-preview-card-avatar-container {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    margin-top: 1rem;
+}
+
+.blog-preview-card-avatar {
+    width: 2rem;
+    height: 2rem;
+    border-radius: 50%;
+}
+
+.blog-preview-card-avatar-container p {
+    font-weight: var(--font-weight-bold);
+    color: var(--color-gray-950);
+}

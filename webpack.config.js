@@ -55,6 +55,10 @@ module.exports = {
       template: './src/pages/interactive-rating-component/index.html',
       filename: 'pages/interactive-rating-component/index.html',
     }),
+    new HtmlWebpackPlugin({
+      template: './src/pages/blog-preview-card/index.html',
+      filename: 'pages/blog-preview-card/index.html',
+    }),
   ],
   devServer: {
     static: {
