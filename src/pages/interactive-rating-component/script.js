@@ -1,4 +1,3 @@
-import '../../styles/interactive-rating-component/style.css';
 // Interactive Rating Component Script
 document.addEventListener('DOMContentLoaded', function () {
     const ratingCircles = document.querySelectorAll('.irc-rating-circle');

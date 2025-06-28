@@ -4,11 +4,11 @@
   "description": "",
   "main": "index.js",
   "homepage": "https://newwynn.github.io/frontend-mentor/",
-  
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "dev": "webpack serve --open",
-    "build": "webpack --mode production",
+    "dev": "webpack serve --config webpack.config.js --open",
+    "build": "webpack --config webpack.prod.js",
+    "build:dev": "webpack --config webpack.config.js",
     "predeploy": "npm run build",
     "deploy": "gh-pages -d dist"
   },
@@ -17,15 +17,17 @@
   "license": "ISC",
   "devDependencies": {
     "@types/node": "^24.0.4",
+    "copy-webpack-plugin": "^13.0.0",
     "css-loader": "^7.1.2",
+    "gh-pages": "^6.0.0",
     "html-loader": "^5.1.0",
     "html-webpack-plugin": "^5.6.3",
+    "mini-css-extract-plugin": "^2.9.2",
     "style-loader": "^4.0.0",
     "ts-loader": "^9.5.2",
     "typescript": "^5.8.3",
     "webpack": "^5.99.9",
     "webpack-cli": "^6.0.1",
-    "webpack-dev-server": "^5.2.2",
-    "gh-pages": "^6.0.0"
+    "webpack-dev-server": "^5.2.2"
   }
 }
