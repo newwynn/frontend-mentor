@@ -1,4 +1,3 @@
-// Interactive Rating Component Script
 document.addEventListener('DOMContentLoaded', function () {
     const ratingCircles = document.querySelectorAll('.irc-rating-circle');
     const submitBtn = document.querySelector('.irc-submit-btn');
