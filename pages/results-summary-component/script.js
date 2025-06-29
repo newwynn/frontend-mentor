@@ -1,0 +1,1 @@
+document.addEventListener("DOMContentLoaded",()=>{const t=Math.round(90),e=document.getElementById("score-counter");let n=0;const o=()=>{n++;const r=(a=n/t)*(2-a);var a;const d=Math.round(76*r);parseInt(e.textContent,10)!==d&&(e.textContent=d),n<t&&requestAnimationFrame(o)};requestAnimationFrame(o)});
