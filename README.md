@@ -4,6 +4,15 @@ This project is a collection of solutions to [Frontend Mentor](https://www.front
 
 ## How to Run Locally
 
+To quickly set up and start the project, you can use one of the provided scripts:
+
+- **Windows:** Double-click or run `run-dev.bat`
+- **macOS/Linux/Git Bash/WSL:** Run `./run-dev.sh` (make it executable with `chmod +x run-dev.sh` if needed)
+
+These scripts will automatically install dependencies and start the development server.
+
+Alternatively, you can run the commands manually:
+
 1. **Install dependencies:**
    ```bash
    npm install
@@ -14,7 +23,7 @@ This project is a collection of solutions to [Frontend Mentor](https://www.front
    ```
    This will launch the app using Webpack Dev Server. Open the provided local URL in your browser.
 
-Alternatively, you can open any `index.html` file in `src/pages/<component-name>/` directly in your browser for static viewing.
+You can also open any `index.html` file in `src/pages/<component-name>/` directly in your browser for static viewing.
 
 ## Project Structure
 - `src/index.html` – Main landing page linking to all components
