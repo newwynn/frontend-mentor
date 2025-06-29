@@ -64,6 +64,10 @@ module.exports = {
         template: './src/pages/social-links/index.html',
         filename: 'pages/social-links/index.html',
       },
+      {
+        template: './src/pages/faq-accordion/index.html',
+        filename: 'pages/faq-accordion/index.html',
+      },
     ].map(page => new HtmlWebpackPlugin(page)),
   ],
   devServer: {
