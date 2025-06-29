@@ -68,6 +68,10 @@ module.exports = {
         template: './src/pages/faq-accordion/index.html',
         filename: 'pages/faq-accordion/index.html',
       },
+      {
+        template: './src/pages/results-summary-component/index.html',
+        filename: 'pages/results-summary-component/index.html',
+      },
     ].map(page => new HtmlWebpackPlugin(page)),
   ],
   devServer: {
