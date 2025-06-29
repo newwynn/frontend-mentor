@@ -1,0 +1,113 @@
+:root {
+    --clr-green: hsl(75, 94%, 57%);
+    --clr-white: hsl(0, 0%, 100%);
+    --clr-grey-700: hsl(0, 0%, 20%);
+    --clr-grey-800: hsl(0, 0%, 12%);
+    --clr-grey-900: hsl(0, 0%, 8%);
+    --ff-base: 'Inter', sans-serif;
+    --fw-regular: 400;
+    --fw-semibold: 600;
+    --fw-bold: 700;
+    --fs-body: 14px;
+    --width-mobile: 375px;
+    --width-desktop: 1440px;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: var(--ff-base);
+    font-size: var(--fs-body);
+    line-height: 1.5;
+    color: var(--clr-grey-700);
+    background-color: var(--clr-grey-900);
+    margin: 0;
+    display: grid;
+    place-content: center;
+    min-height: 100vh;
+    height: 100vh;
+}
+
+.social-links-container {
+    width: var(--width-mobile);
+    height: auto;
+    padding: 2rem;
+    background-color: var(--clr-grey-800);
+    border-radius: 1rem;
+}
+
+.social-links-container-avatar {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.social-links-container-avatar-img {
+    width: 5rem;
+    height: 5rem;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.social-links-container-avatar-text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.social-links-container-avatar h1 {
+    font-size: 1.5rem;
+    font-weight: var(--fw-regular);
+    color: var(--clr-white);
+    margin: 0;
+}
+
+.social-links-container-avatar h3 {
+    font-size: 12px;
+    font-weight: var(--fw-semibold);
+    color: var(--clr-green);
+    margin: 0 0 1rem;
+}
+
+.social-links-container-avatar-text-p {
+    font-size: 12px;
+    font-weight: var(--fw-regular);
+    color: var(--clr-white);
+    margin: 0 0 1rem;
+}
+
+.social-links-container-avatar-buttons {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    width: 100%;
+}
+
+.social-links-container-avatar-buttons-btn {
+    font-size: 12px;
+    font-weight: var(--fw-semibold);
+    color: var(--clr-white);
+    margin: 0;
+    padding: 0.8rem 1rem;
+    border-radius: 0.5rem;
+    background-color: var(--clr-grey-700);
+    cursor: pointer;
+    transition: all 0.2s ease;
+    border: none;
+    outline: none;
+    width: 100%;
+}
+
+.social-links-container-avatar-buttons-btn:hover {
+    background-color: var(--clr-green);
+    color: var(--clr-grey-900);
+}
+
+
