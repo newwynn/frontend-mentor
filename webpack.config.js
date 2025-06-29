@@ -60,6 +60,10 @@ module.exports = {
         template: './src/pages/blog-preview-card/index.html',
         filename: 'pages/blog-preview-card/index.html',
       },
+      {
+        template: './src/pages/social-links/index.html',
+        filename: 'pages/social-links/index.html',
+      },
     ].map(page => new HtmlWebpackPlugin(page)),
   ],
   devServer: {
@@ -69,6 +73,8 @@ module.exports = {
     port: 3000,
     open: true,
     compress: true,
+    hot: true,
+    historyApiFallback: true,
   },
   resolve: {
     extensions: ['.js', '.json'],
