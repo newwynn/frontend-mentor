@@ -1,4 +1,4 @@
-// script.js - Efficient accordion toggle with single open item
+// script.js
 
 const buttons = document.querySelectorAll('.faq-accordion-content-btn');
 let openContent = null;
