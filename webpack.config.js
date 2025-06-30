@@ -72,6 +72,10 @@ module.exports = {
         template: './src/pages/results-summary-component/index.html',
         filename: 'pages/results-summary-component/index.html',
       },
+      {
+        template: './src/pages/product-preview-card/index.html',
+        filename: 'pages/product-preview-card/index.html',
+      },
     ].map(page => new HtmlWebpackPlugin(page)),
   ],
   devServer: {
