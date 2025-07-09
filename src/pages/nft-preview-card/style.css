@@ -1,0 +1,115 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap');
+
+:root {
+  --color-blue-500: hsl(215, 51%, 70%);
+  --color-cyan-400: hsl(178, 100%, 50%);
+
+  --color-blue-950: hsl(217, 54%, 11%);
+  --color-blue-900: hsl(216, 50%, 16%);
+  --color-blue-800: hsl(215, 32%, 27%);
+  --color-white: hsl(0, 0%, 100%);
+
+  --font-family-outfit: 'Outfit', sans-serif;
+  --font-weight-300: 300;
+  --font-weight-400: 400;
+  --font-weight-600: 600;
+  --font-size-body: 18px;
+
+  --design-width-mobile: 375px;
+  --design-width-desktop: 1440px;
+}
+
+body {
+    font-family: var(--font-family-outfit);
+    font-size: var(--font-size-body);
+    line-height: 1.5;
+    color: var(--color-white);
+    background-color: var(--color-blue-950);
+    margin: 0;
+    display: grid;
+    place-content: center;
+    min-height: 100vh;
+    height: 100vh;
+}
+
+.nft-preview-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    transition: all 0.2s ease;
+    border-radius: 1rem;
+    padding: 1.5rem;
+    width: min-content;
+    height: auto;
+    background-color: var(--color-blue-900);
+}
+
+.nft-preview-card-description {
+    font-size: 17px;
+    color: var(--color-blue-500);
+    margin: 0;
+}
+
+.nft-preview-card-img-container {
+    width: 100%;
+    height: auto;
+    border-radius: 1rem;
+}
+
+.nft-preview-card-img-container:hover {
+    cursor: pointer;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 24px rgba(0, 0, 0, 0.1);
+}
+
+.nft-preview-card-price-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.nft-preview-card-price-container-span {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-size: 14px;
+    color: var(--color-blue-500);
+}
+
+.nft-preview-card-price-container-span-one {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-size: 16px;
+    color: var(--color-cyan-400);
+}
+
+.nft-preview-card-img {
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 1rem;
+}
+
+.nft-preview-card-avatar {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.nft-preview-card-avatar-img {
+    width: 2rem;
+    height: 2rem;
+    border-radius: 50%;
+    border: 2px solid var(--color-white);
+}
+
+.nft-preview-card-avatar-text {
+    font-size: 13px;
+    font-weight: var(--font-weight-400);
+}
+
+.nft-preview-card-avatar-text-span {
+    color:var(--color-blue-500);
+}

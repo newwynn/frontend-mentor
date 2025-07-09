@@ -76,6 +76,10 @@ module.exports = {
         template: './src/pages/product-preview-card/index.html',
         filename: 'pages/product-preview-card/index.html',
       },
+      {
+        template: './src/pages/nft-preview-card/index.html',
+        filename: 'pages/nft-preview-card/index.html',
+      },
     ].map(page => new HtmlWebpackPlugin(page)),
   ],
   devServer: {
