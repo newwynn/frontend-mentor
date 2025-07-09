@@ -91,6 +91,13 @@ body {
     border-radius: 1rem;
 }
 
+.nft-preview-card-divider {
+    height: 1px;
+    background-color: var(--color-blue-800);
+    width: 100%;
+    margin: 1rem 0;
+}
+
 .nft-preview-card-avatar {
     display: flex;
     flex-direction: row;
