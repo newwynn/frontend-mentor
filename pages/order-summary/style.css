@@ -36,6 +36,8 @@ body {
   place-items: center;
   flex-direction: column;
   justify-content: center;
+  background-size: cover;
+  background-position-y: -190px;
 }
 
 .order-summary-text-container-h1 {
