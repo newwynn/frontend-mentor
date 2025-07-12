@@ -80,6 +80,10 @@ module.exports = {
         template: './src/pages/nft-preview-card/index.html',
         filename: 'pages/nft-preview-card/index.html',
       },
+      {
+        template: './src/pages/order-summary/index.html',
+        filename: 'pages/order-summary/index.html',
+      }
     ].map(page => new HtmlWebpackPlugin(page)),
   ],
   devServer: {

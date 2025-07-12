@@ -1,0 +1,62 @@
+/* CSS Variables */
+:root {
+  /* Primary Colors */
+  --color-pale-blue: hsl(225, 100%, 94%);
+  --color-bright-blue: hsl(245, 75%, 52%);
+  
+  /* Neutral Colors */
+  --color-very-pale-blue: hsl(225, 100%, 98%);
+  --color-desaturated-blue: hsl(224, 23%, 55%);
+  --color-dark-blue: hsl(223, 47%, 23%);
+  
+  /* Typography */
+  --font-family: 'Red Hat Display', sans-serif;
+  --font-size-paragraph: 16px;
+  --font-weight-medium: 500;
+  --font-weight-bold: 700;
+  --font-weight-black: 900;
+  
+  /* Layout */
+  --mobile-breakpoint: 375px;
+  --desktop-breakpoint: 1440px;
+}
+
+/* Base Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: var(--font-family);
+  font-size: var(--font-size-paragraph);
+  font-weight: var(--font-weight-medium);
+  color: var(--color-desaturated-blue);
+  background-color: var(--color-pale-blue);
+  background-image: url("../../order-summary/pattern-background-desktop.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  line-height: 1.5;
+  min-height: 100vh;
+  display: flex;
+  place-items: center;
+  flex-direction: column;
+  justify-content: center;
+  padding: 1.5rem;
+}
+
+.order-summary {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: var(--width-mobile);
+    height: auto;
+    gap: 1rem;
+    border-radius: 1rem;
+    padding: 1.5rem;
+    background-color: var(--color-white);
+}
+    
