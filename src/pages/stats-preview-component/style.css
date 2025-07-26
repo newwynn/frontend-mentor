@@ -107,6 +107,7 @@ body {
     font-size: 0.6rem;
     color: var(--white-60);
     margin: 0;
+    letter-spacing: 2px;
 }
 
 .spc-right {
